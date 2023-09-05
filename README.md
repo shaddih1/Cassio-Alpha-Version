@@ -1,3 +1,3 @@
-# Cassiopeia-α
+# Cassiopeia-V.α
 
 Cassiopeia Petroliferos 
