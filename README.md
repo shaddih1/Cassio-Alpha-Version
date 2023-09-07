@@ -1,3 +1,1 @@
-# Cassiopeia-V.α
-
-Cassiopeia Petroliferos 
+# Cassiopeia-version α
