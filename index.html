@@ -1,489 +1,758 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- title -->
     <title>Cassiopeia | Inicio</title>
     <meta content="Coderthemes" name="author" />
-    <meta content="A fully featured multi purpose template" name="description" />
+    <meta
+      content="A fully featured multi purpose template"
+      name="description"
+    />
 
     <!-- theme favicon -->
-    <link rel="shortcut icon" href="imgs/favicon.png">
-
+    <link rel="shortcut icon" href="imgs/favicon.png" />
 
     <!-- third party plugins -->
-<link rel="stylesheet" type="text/css" href="css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor.min.css" />
 
     <!-- theme css -->
-<link rel="stylesheet" type="text/css" href="css/theme.min.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="css/theme.min.css" />
+  </head>
 
-<body>
-    
+  <body>
     <div class="header-7">
-        <header>
-          <nav class="navbar navbar-expand-lg topnav-menu navbar-light zindex-10" >
-            <div class="container">
-              <a class="navbar-brand" href="/">
-                <img src=imgs/logo.png height="60" class="d-inline-block align-top" alt="" />
-              </a>
-              <a href="#" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content3"
-                aria-controls="topnav-menu-content3" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </a>
-              <div class="collapse navbar-collapse" id="topnav-menu-content3">
-                
-                  <ul class="navbar-nav align-items-lg-center mx-auto">
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Certificaciones</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contactanos">Contactanos</a>
-                      </li>
-                  </ul>
+      <header>
+        <nav class="navbar navbar-expand-lg topnav-menu navbar-light zindex-10">
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <img src=imgs/logo.png height="60" class="d-inline-block
+              align-top" alt="" />
+            </a>
+            <a
+              href="#"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#topnav-menu-content3"
+              aria-controls="topnav-menu-content3"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="topnav-menu-content3">
+              <ul class="navbar-nav align-items-lg-center mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Certificaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contactanos">Contactanos</a>
+                </li>
+              </ul>
 
-                  <ul class="navbar-nav">
-                    <li class="nav-item log_in">
-                      <a class="btn btn-secondary btn-sm" href="#">Inciar Sesión</a>
-                    </li>
-                  </ul>
-
-              </div>
+              <ul class="navbar-nav">
+                <li class="nav-item log_in">
+                  <a class="btn btn-secondary btn-sm" href="#">Inciar Sesión</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-            <div id="loginModal" class="modal">
-              <div class="modal-content">
-                <span class="close-icon">&times;</span>
-                <img src="imgs/logo.png" alt="Centered Image">
-                <form id="loginForm" novalidate method="POST">
-                  <label for="email">Correo electrónico:</label>
-                  <input type="email" id="email" name="email"><br>
-                  
-                  <label for="password">Contraseña:</label>
-                  <input type="password" id="password" name="password" required>
-                  <span id="showPassword" class="eye-icon">👁️</span><br>
+          </div>
+        </nav>
+        <div id="loginModal" class="modal">
+          <div class="modal-content">
+            <span class="close-icon">&times;</span>
+            <img src="imgs/logo.png" alt="Centered Image" />
+            <form id="loginForm" novalidate method="POST">
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" /><br />
 
-                  <button type="submit" class="btn btn-primary">Iniciar sesión<a id="dashboardLink" href="dashboard.html" style="display: none;"></a></button>
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required />
+              <span id="showPassword" class="eye-icon">👁️</span><br />
 
-                  <div id="errorLabel" class="errorLabel"></div>
-                </form>
+              <button type="submit" class="btn btn-primary">
+                Iniciar sesión<a
+                  id="dashboardLink"
+                  href="dashboard.html"
+                  style="display: none"
+                ></a>
+              </button>
 
-                <form id="registerForm" style="display: none;">
-                  <div id="registerSteps">
-                    <div class="step" id="step1">
-                      <h2>Paso 1: Información personal</h2>
-                      <form id="step1Form">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" required><br>
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" required><br>
-                        <button type="button" class="btn btn-secondary" id="step1Continuar">Continuar</button>
-                      </form>
-                    </div>
-                    <div class="step" id="step2">
-                      <h2>Paso2: Subir Credenciales</h2>
-                      <form id="step2Form">
-                        <p>Subir credenciales relevantes para verificación:</p>
-                        <input type="file" id="credentials" accept=".pdf, .docx" required><br>
-                        <button type="button" class="btn btn-secondary" id="step2Continuar">Continuar</button>
-                      </form>
-                    </div>
-                    <div class="step" id="step3">
-                      <h2>Paso 3: Subir Certificados</h2>
-                      <form id="step3Form">
-                        <p>Subir certificados para verificación:</p>
-                        <input type="file" id="credentials" accept=".pdf, .docx" required><br>
-                        <button type="button" class="btn btn-secondary" id="step2Continuar">Continuar</button>
-                      </form>
-                    </div>
-                    <div class="step" id="step4">
-                      <h2>Paso 4: Escribir detalles</h2>
-                      <form id="step4Form">
-                        <p>Observaciones y comentarios :</p>
-                        <textarea id="question" required></textarea><br>
-                        <button type="button" class="btn btn-secondary" id="step4Continuar">Continuar</button>
-                      </form>
-                    </div>
-                    <div class="step" id="step5">
-                      <h2> Paso 5: Revisión final</h2>
-                      <form id="step5Form">
-                        <p>Por favor verifiqué su información antes de enviar:</p>
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
-                      </form>
-                    </div>
-                  </div>
-                </form>
+              <div id="errorLabel" class="errorLabel"></div>
+            </form>
 
-                
-                <form id="resetPasswordForm" style="display: none;">
-                  <label for="resetEmail">Correo electrónico:</label>
-                  <input type="email" id="resetEmail" name="resetEmail" required><br>
-
-                  <button type="submit" class="btn btn-secondary">Enviar verificación</button>
-                </form>
-                <a href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
-                <p id="toggleForms">¿Aún no eres miembro? <a href="#">Regístrate</a></p>
-                <span class="back-icon">&larr;</span>
-
-              </div>
-            </div>
-        </header>
-
-        <section class="hero-4 pt-7 pb-3 py-sm-7">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-5 col-md-6">
-                        <h1 class="hero-title">
-                            Investiga hoy, abastece <span class="highlight highlight-warning d-inline-block typed"></span>
-                        </h1>
-                        <p class="mt-4 fs-17">
-                            Líderes en la comercialización de petrolíferos. Obtén tus precios al instante, sin esperas, ni compromisos.
-                        </p>
-
-                        <div class="pt-3 pt-sm-5 margin-down">
-                            <a href="dashboard.html">
-                            <button class="btn btn-primary">Empieza Ahora <i class="icon-xxs ms-1" data-feather="arrow-right"></i></button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6">
-                        <div class="shadow img-container text-end" data-aos="fade-left" data-aos-duration="1000">
-                            <img src=imgs/hero.png alt="Cassiopeia Inicio" class="img-fluid" data-aos="fade-left" data-aos-duration="1000"/>
-                        </div>
-                    </div>
+            <form id="registerForm" style="display: none">
+              <div id="registerSteps">
+                <div class="step" id="step1">
+                  <h2>Paso 1: Información personal</h2>
+                  <form id="step1Form">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required /><br />
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required /><br />
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="step1Continuar"
+                    >
+                      Continuar
+                    </button>
+                  </form>
                 </div>
+                <div class="step" id="step2">
+                  <h2>Paso2: Subir Credenciales</h2>
+                  <form id="step2Form">
+                    <p>Subir credenciales relevantes para verificación:</p>
+                    <input
+                      type="file"
+                      id="credentials"
+                      accept=".pdf, .docx"
+                      required
+                    /><br />
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="step2Continuar"
+                    >
+                      Continuar
+                    </button>
+                  </form>
+                </div>
+                <div class="step" id="step3">
+                  <h2>Paso 3: Subir Certificados</h2>
+                  <form id="step3Form">
+                    <p>Subir certificados para verificación:</p>
+                    <input
+                      type="file"
+                      id="credentials"
+                      accept=".pdf, .docx"
+                      required
+                    /><br />
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="step2Continuar"
+                    >
+                      Continuar
+                    </button>
+                  </form>
+                </div>
+                <div class="step" id="step4">
+                  <h2>Paso 4: Escribir detalles</h2>
+                  <form id="step4Form">
+                    <p>Observaciones y comentarios :</p>
+                    <textarea id="question" required></textarea><br />
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      id="step4Continuar"
+                    >
+                      Continuar
+                    </button>
+                  </form>
+                </div>
+                <div class="step" id="step5">
+                  <h2>Paso 5: Revisión final</h2>
+                  <form id="step5Form">
+                    <p>Por favor verifiqué su información antes de enviar:</p>
+                    <button type="submit" class="btn btn-secondary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </form>
+
+            <form id="resetPasswordForm" style="display: none">
+              <label for="resetEmail">Correo electrónico:</label>
+              <input
+                type="email"
+                id="resetEmail"
+                name="resetEmail"
+                required
+              /><br />
+
+              <button type="submit" class="btn btn-secondary">
+                Enviar verificación
+              </button>
+            </form>
+            <a href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
+            <p id="toggleForms">
+              ¿Aún no eres miembro? <a href="#">Regístrate</a>
+            </p>
+            <span class="back-icon">&larr;</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero-4 pt-7 pb-3 py-sm-7">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+              <h1 class="hero-title">
+                Investiga hoy, abastece
+                <span
+                  class="highlight highlight-warning d-inline-block typed"
+                ></span>
+              </h1>
+              <p class="mt-4 fs-17">
+                Líderes en la comercialización de petrolíferos. Obtén tus
+                precios al instante, sin esperas, ni compromisos.
+              </p>
+
+              <div class="pt-3 pt-sm-5 margin-down">
+                <a href="dashboard.html">
+                  <button class="btn btn-primary">
+                    Empieza Ahora
+                    <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+                  </button>
+                </a>
+              </div>
             </div>
-            <div class="shape bottom">
-                <svg width="1440px" height="40px" viewBox="0 0 1440 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="shape-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="curve" fill="#fff">
-                            <path d="M0,30.013 C239.659,10.004 479.143,0 718.453,0 C957.763,0 1198.28,10.004 1440,30.013 L1440,40 L0,40 L0,30.013 Z" id="Path"></path>
-                        </g>
-                    </g>
-                </svg>
+            <div class="col-lg-7 col-md-6">
+              <div
+                class="shadow img-container text-end"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <img src=imgs/hero.png alt="Cassiopeia Inicio" class="img-fluid"
+                data-aos="fade-left" data-aos-duration="1000"/>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="shape bottom">
+          <svg
+            width="1440px"
+            height="40px"
+            viewBox="0 0 1440 40"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g
+              id="shape-b"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+            >
+              <g id="curve" fill="#fff">
+                <path
+                  d="M0,30.013 C239.659,10.004 479.143,0 718.453,0 C957.763,0 1198.28,10.004 1440,30.013 L1440,40 L0,40 L0,30.013 Z"
+                  id="Path"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </section>
     </div>
 
     <!-- clients - reviews start highlight highlight-warning d-inline-block  -->
     <section class="py-5">
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="fw-medium pb-3 mt-0">Trabajamos en colaboración con</h2>
-                    <ul class="list-inline my-3">
-                        <li class="list-inline-item me-4 me-lg-5">
-                            <img src=imgs/pemex-logo.webp alt="" class="mb-2 mb-xl-0" height="36" />
-                        </li>
-                        <li class="list-inline-item me-4 me-lg-5">
-                            <img src=imgs/cre-logo.webp alt="" class="mb-2 mb-xl-0" height="36" />
-                        </li>
-                        <li class="list-inline-item me-4 me-lg-5">
-                            <img src=imgs/grupotransportes-logo.webp alt="" class="mb-2 mb-xl-0" height="36" />
-                        </li>
-                        <li class="list-inline-item me-4 me-lg-5">
-                            <img src=imgs/canacar-logo.webp alt="" class="mb-2 mb-xl-0" height="36" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="fw-medium pb-3 mt-0">Trabajamos en colaboración con</h2>
+            <ul class="list-inline my-3">
+              <li class="list-inline-item me-4 me-lg-5">
+                <img src=imgs/pemex-logo.webp alt="" class="mb-2 mb-xl-0"
+                height="36" />
+              </li>
+              <li class="list-inline-item me-4 me-lg-5">
+                <img src=imgs/cre-logo.webp alt="" class="mb-2 mb-xl-0"
+                height="36" />
+              </li>
+              <li class="list-inline-item me-4 me-lg-5">
+                <img src=imgs/grupotransportes-logo.webp alt="" class="mb-2
+                mb-xl-0" height="36" />
+              </li>
+              <li class="list-inline-item me-4 me-lg-5">
+                <img src=imgs/canacar-logo.webp alt="" class="mb-2 mb-xl-0"
+                height="36" />
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
     <!-- clients - reviews end -->
 
     <!-- features start -->
     <section class="pt-lg-6 pt-4 pb-lg-6 pb-5 position-relative optim">
-        <div class="container">
-            <div class="row align-items-center mb-6 pb-lg-5">
-                <div class="col-lg-5">
-                    <div class="mb-4 mb-lg-0">
-                        <span class="badge rounded-pill badge-soft-success px-2 py-1">Servicios de alta calidad</span>
-                        <h1 class="display-4 fw-medium mb-3">Tu proveedor confiable de combustible</h1>
-                        <p class="text-body mx-auto mb-4 pb-2">
-                            Comprometidos a suministrar combustibles de calidad certificada a precios competitivos.<br><br>Empresa 100% Mexicana que garantiza seguridad y eficiencia en cada entrega.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">
-                            Más información <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
-                        </a>  
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1 ">
-                    <img src=imgs/proveedor.png alt="" class="img-fluid" data-aos="fade-left" data-aos-duration="1000"/>
-                </div>
+      <div class="container">
+        <div class="row align-items-center mb-6 pb-lg-5">
+          <div class="col-lg-5">
+            <div class="mb-4 mb-lg-0">
+              <span class="badge rounded-pill badge-soft-success px-2 py-1"
+                >Servicios de alta calidad</span
+              >
+              <h1 class="display-4 fw-medium mb-3">
+                Tu proveedor confiable de combustible
+              </h1>
+              <p class="text-body mx-auto mb-4 pb-2">
+                Comprometidos a suministrar combustibles de calidad certificada
+                a precios competitivos.<br /><br />Empresa 100% Mexicana que
+                garantiza seguridad y eficiencia en cada entrega.
+              </p>
+              <a href="#" class="btn btn-outline-primary">
+                Más información
+                <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+              </a>
             </div>
-
-            <div class="row align-items-center mb-6 pb-lg-5 ">
-                <div class="col-lg-6">
-                    <div class="bg-white p-2 rounded shadow mb-lg-0 mb-3" data-aos="fade-right" data-aos-duration="1500">
-                        <img src=imgs/cotizar.png alt="" class="img-fluid" />
-                    </div>
-                </div>
-
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="mt-4 mt-lg-0">
-                        <h1 class="display-4 fw-medium mb-3">Tu combustible en un clic</h1>
-                        <p class="text-body mx-auto mb-4 pb-3">
-                            Cotizar nunca fue tan rápido y sencillo en menos de 10 minutos. <br><br> Descubre nuestros precios sin compromiso y haga su pedido hoy mismo.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">
-                            Cotiza rápido <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="mb-4 mb-lg-0">
-                        <h1 class="display-4 fw-medium mb-3">Conexión Total</h1>
-                        <p class="text-body mx-auto mb-4 pb-2">
-                            Para que tu equipo se sienta cómodo, te ofrecemos todos nuestros canales de comunicación.
-                        </p>
-                        <a href="#" class="btn btn-outline-primary">
-                            Más información <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
-                        </a>  
-                    </div>
-                </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <img src=imgs/servicio.png alt="" class="img-fluid" data-aos="fade-left" data-aos-duration="1000"/>
-                </div>
-            </div>
-            
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <img src=imgs/proveedor.png alt="" class="img-fluid"
+            data-aos="fade-left" data-aos-duration="1000"/>
+          </div>
         </div>
+
+        <div class="row align-items-center mb-6 pb-lg-5">
+          <div class="col-lg-6">
+            <div
+              class="bg-white p-2 rounded shadow mb-lg-0 mb-3"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img src=imgs/cotizar.png alt="" class="img-fluid" />
+            </div>
+          </div>
+
+          <div class="col-lg-5 offset-lg-1">
+            <div class="mt-4 mt-lg-0">
+              <h1 class="display-4 fw-medium mb-3">
+                Tu combustible en un clic
+              </h1>
+              <p class="text-body mx-auto mb-4 pb-3">
+                Cotizar nunca fue tan rápido y sencillo en menos de 10 minutos.
+                <br /><br />
+                Descubre nuestros precios sin compromiso y haga su pedido hoy
+                mismo.
+              </p>
+              <a href="#" class="btn btn-outline-primary">
+                Cotiza rápido
+                <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-lg-5">
+            <div class="mb-4 mb-lg-0">
+              <h1 class="display-4 fw-medium mb-3">Conexión Total</h1>
+              <p class="text-body mx-auto mb-4 pb-2">
+                Para que tu equipo se sienta cómodo, te ofrecemos todos nuestros
+                canales de comunicación.
+              </p>
+              <a href="#" class="btn btn-outline-primary">
+                Más información
+                <i class="icon-xxs ms-1" data-feather="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <img src=imgs/servicio.png alt="" class="img-fluid"
+            data-aos="fade-left" data-aos-duration="1000"/>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- features end -->
 
     <!-- integrations start -->
     <section class="my-5 py-6 bg-gradient-img position-relative optim2">
-        <div class="container" data-aos="fade-up" data-aos-duration="1500">
-            <div class="row">
-                <div class="col text-center">
-                    <span class="badge rounded-pill badge-soft-orange px-2 py-1">Atención 24/7 los 365 días del año</span>
-                    <h1 class="display-5 fw-medium text-white">Contamos con cobertura nacional</h1>
-                    <p class="text-body-white mx-auto">
-                        Estamos <span class="text-orange fw-bold">disponibles</span> en los siguientes estados de la república.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row align-items-center mb-3 pb-lg-3">
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="p-2 mb-lg-0 mb-3" data-aos="fade-up" data-aos-duration="2000">
-                        <img src=imgs/mapacobertura.webp alt="cobertura" class="img-fluid" />
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="mt-4 mt-lg-0 text-center" data-aos="fade-up" data-aos-duration="2000">
-                        <p class="text-body-white mx-auto mb-4 pb-3">
-                            Tamaulipas, Nuevo León, Estado de México, Veracruz, Campeche, Hidalgo, Quintana Roo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <div class="row">
+          <div class="col text-center">
+            <span class="badge rounded-pill badge-soft-orange px-2 py-1"
+              >Atención 24/7 los 365 días del año</span
+            >
+            <h1 class="display-5 fw-medium text-white">
+              Contamos con cobertura nacional
+            </h1>
+            <p class="text-body-white mx-auto">
+              Estamos <span class="text-orange fw-bold">disponibles</span> en
+              los siguientes estados de la república.
+            </p>
+          </div>
         </div>
+
+        <div class="row align-items-center mb-3 pb-lg-3">
+          <div class="col-lg-5 offset-lg-1">
+            <div
+              class="p-2 mb-lg-0 mb-3"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <img src=imgs/mapacobertura.webp alt="cobertura" class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div
+              class="mt-4 mt-lg-0 text-center"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <p class="text-body-white mx-auto mb-4 pb-3">
+                Tamaulipas, Nuevo León, Estado de México, Veracruz, Campeche,
+                Hidalgo, Quintana Roo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- integration end -->
 
     <!-- contáctanos inicio -->
     <section class="my-5 py-5 position-relative" id="contactanos">
-        <div class="container" data-aos="fade-up" data-aos-duration="1500">
-            <div class="text-center">
-                <span class="badge rounded-pill badge-soft-primary px-2 py-1">Hablemos más</span>
-                <h1 class="display-5 fw-medium">Contáctanos</h1>
-                <p class="text-body mx-auto">
-                    Por favor <span class="text-primary fw-bold">complete</span> el siguiente formulario y nos comunicaremos con usted en breve.
-                </p>
-            </div>
-            <div class="align-items-center row">
-                <div class="col text-center ">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-12">
-                                    <div class="mb-1">
-                                        <label class="form-label">Nombre o Razón social</label>
-                                        <input placeholder="Nombre" name="nombre" type="name" id="name" class="form-control" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mb-1">
-                                    <label class="form-label">Combustible de interés</label>
-                                    <select class="form-select" name="combustible_interes" required>
-                                        <option value="" disabled="">Seleccione un combustible</option>
-                                        <option value="Diesel Automotriz">Diesel Automotriz</option>
-                                        <option value="Diesel Ultra bajo azufre">Diesel Ultra bajo azufre</option>
-                                        <option value="Gasolina Regular">Gasolina Regular</option>
-                                        <option value="Gasolina Premium">Gasolina Premium</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                               <div class="mb-1">
-                                <label class="form-label">Telefono</label>
-                                <input placeholder="Tu telefono" name="telefono" type="phone" id="phone" class="form-control">
-                               </div> 
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-1">
-                                    <label class="form-label">Correo</label>
-                                    <input placeholder="Tu correo electrónico" name="correo" type="femail" id="femail" class="form-control" required="@">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="mb-1">
-                                    <label class="form-label">Mensaje</label>
-                                    <textarea placeholder="Escribe tu mensaje..." name="mensaje" rows="5" type="textarea" id="message" class="form-control" required></textarea>
-                                </div>
-                            </div>
-                            <div class="mb-0 col-lg-auto">
-                                <button type="submit" class="btn btn-primary">Enviar 
-                                    <span class="icon icon-xs text-white ms-1">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send "><g><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></g></svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="shadow card">
-                        <div class="card-body">
-                            <div class="d-flex text-align start">
-                                <span class="bg-soft-primary avatar avatar-sm rounded icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail icon-dual-primary"><g><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></g></svg></span>
-                                <div class="flex-grow-1">
-                                    <h5 class="mt-0">Correo</h5>
-                                    <p class="mb-0">
-                                        <a href="mailto:ventas@cassiopeia.com.mx">ventas@cassiopeia.com.mx</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shadow card">
-                        <div class="card-body">
-                            <div class="d-flex text-align start">
-                                <span class="bg-soft-orange avatar avatar-sm rounded icon icon-with-bg icon-xs text-info me-3 flex-shrink-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin icon-dual-orange"><g><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></g></svg></span>
-                                <div class="flex-grow-1">
-                                    <h5 class="mt-0">Dirección</h5>
-                                    <p class="mb-0">Av. Insurgentes Sur 1571, San José Insurgentes, Benito Juárez, 03900 Ciudad de México, CDMX</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shadow card">
-                        <div class="card-body">
-                            <div class="d-flex text-align start">
-                                <span class="align-self-center bg-soft-info avatar avatar-sm rounded icon icon-with-bg icon-xs text-primary me-4 flex-shrink-0"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile icon-dual-info"><g><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></g></svg></span>
-                                <div class="flex-grow-1">
-                                    <h5 class="mt-0">Atención al cliente</h5>
-                                    <p class="mb-0">+52 55 4937 0469</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <div class="text-center">
+          <span class="badge rounded-pill badge-soft-primary px-2 py-1"
+            >Hablemos más</span
+          >
+          <h1 class="display-5 fw-medium">Contáctanos</h1>
+          <p class="text-body mx-auto">
+            Por favor <span class="text-primary fw-bold">complete</span> el
+            siguiente formulario y nos comunicaremos con usted en breve.
+          </p>
         </div>
+        <div class="align-items-center row">
+          <div class="col text-center">
+            <form>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="col-md-12">
+                    <div class="mb-1">
+                      <label class="form-label">Nombre o Razón social</label>
+                      <input
+                        placeholder="Nombre"
+                        name="nombre"
+                        type="name"
+                        id="name"
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-1">
+                    <label class="form-label">Combustible de interés</label>
+                    <select
+                      class="form-select"
+                      name="combustible_interes"
+                      required
+                    >
+                      <option value="" disabled="">
+                        Seleccione un combustible
+                      </option>
+                      <option value="Diesel Automotriz">
+                        Diesel Automotriz
+                      </option>
+                      <option value="Diesel Ultra bajo azufre">
+                        Diesel Ultra bajo azufre
+                      </option>
+                      <option value="Gasolina Regular">Gasolina Regular</option>
+                      <option value="Gasolina Premium">Gasolina Premium</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-1">
+                    <label class="form-label">Telefono</label>
+                    <input
+                      placeholder="Tu telefono"
+                      name="telefono"
+                      type="phone"
+                      id="phone"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mb-1">
+                    <label class="form-label">Correo</label>
+                    <input
+                      placeholder="Tu correo electrónico"
+                      name="correo"
+                      type="femail"
+                      id="femail"
+                      class="form-control"
+                      required="@"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-1">
+                    <label class="form-label">Mensaje</label>
+                    <textarea
+                      placeholder="Escribe tu mensaje..."
+                      name="mensaje"
+                      rows="5"
+                      type="textarea"
+                      id="message"
+                      class="form-control"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="mb-0 col-lg-auto">
+                  <button type="submit" class="btn btn-primary">
+                    Enviar
+                    <span class="icon icon-xs text-white ms-1">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="feather feather-send"
+                      >
+                        <g>
+                          <line x1="22" y1="2" x2="11" y2="13"></line>
+                          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </g>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="shadow card">
+              <div class="card-body">
+                <div class="d-flex text-align start">
+                  <span
+                    class="bg-soft-primary avatar avatar-sm rounded icon icon-with-bg icon-xs text-primary me-3 flex-shrink-0"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-mail icon-dual-primary"
+                    >
+                      <g>
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </g></svg
+                  ></span>
+                  <div class="flex-grow-1">
+                    <h5 class="mt-0">Correo</h5>
+                    <p class="mb-0">
+                      <a href="mailto:ventas@cassiopeia.com.mx"
+                        >ventas@cassiopeia.com.mx</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shadow card">
+              <div class="card-body">
+                <div class="d-flex text-align start">
+                  <span
+                    class="bg-soft-orange avatar avatar-sm rounded icon icon-with-bg icon-xs text-info me-3 flex-shrink-0"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-map-pin icon-dual-orange"
+                    >
+                      <g>
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </g></svg
+                  ></span>
+                  <div class="flex-grow-1">
+                    <h5 class="mt-0">Dirección</h5>
+                    <p class="mb-0">
+                      Av. Insurgentes Sur 1571, San José Insurgentes, Benito
+                      Juárez, 03900 Ciudad de México, CDMX
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="shadow card">
+              <div class="card-body">
+                <div class="d-flex text-align start">
+                  <span
+                    class="align-self-center bg-soft-info avatar avatar-sm rounded icon icon-with-bg icon-xs text-primary me-4 flex-shrink-0"
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-smile icon-dual-info"
+                    >
+                      <g>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                      </g></svg
+                  ></span>
+                  <div class="flex-grow-1">
+                    <h5 class="mt-0">Atención al cliente</h5>
+                    <p class="mb-0">+52 55 4937 0469</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- contáctanos final -->
 
     <!-- cta + footer start -->
     <section class="py-3 bg-gradient3 position-relative">
-        <div class="container pt-4">
-            <div class="row">
-                <div class="col">
-                    <a class="navbar-brand me-lg-4 mb-4 me-auto" href="#">
-                        <img src=imgs/logo.png height="30" class="d-inline-block align-top" alt="" />
-                    </a>
-                    <h5 class="fw-normal text-muted w-75">Dedicados a la comercialización de petrolíferos a nivel nacional a precios competitivos. Somos una empresa 100% Mexicana.</h5>
-                </div>
-                <div class="col-sm-auto">
-                    <div class="ps-md-5">
-                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Plataforma</h6>
-                        <ul class="list-unstyled">
-                            <li class="my-3"><a href="#" class="text-muted">Dashboard</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-auto">
-                    <div class="ps-md-5">
-                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Empresa</h6>
-                        <ul class="list-unstyled">
-                            <li class="my-3"><a href="#" class="text-muted">Nosotros</a></li>
-                            <li class="my-3"><a href="#" class="text-muted">Servicios</a></li>
-                            <li class="my-3"><a href="#" class="text-muted">Certificaciones</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-auto">
-                    <div class="ps-md-5">
-                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Legal
-                        </h6>
-                        <ul class="list-unstyled">
-                            <li class="my-3"><a href="#" class="text-muted">Aviso de privacidad</a></li>
-                            <li class="my-3"><a href="#" class="text-muted">Legalidad</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand me-lg-4 mb-4 me-auto" href="#">
+              <img src=imgs/logo.png height="30" class="d-inline-block
+              align-top" alt="" />
+            </a>
+            <h5 class="fw-normal text-muted w-75">
+              Dedicados a la comercialización de petrolíferos a nivel nacional a
+              precios competitivos. Somos una empresa 100% Mexicana.
+            </h5>
+          </div>
+          <div class="col-sm-auto">
+            <div class="ps-md-5">
+              <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">
+                Plataforma
+              </h6>
+              <ul class="list-unstyled">
+                <li class="my-3">
+                  <a href="#" class="text-muted">Dashboard</a>
+                </li>
+              </ul>
             </div>
-            <hr />
-            <div class="row text-md-start text-center">
-                <div class="col-md-6">
-                    <p class="pb-0 mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> © Cassiopeia Petrolíferos. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="align-items-end mt-md-0 mt-4">
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-inline-block me-4">
-                                <a href=""><i data-feather="facebook" class="icon icon-xs"></i></a>
-                            </li>
-                            <li class="d-inline-block">
-                                <a href=""><i data-feather="linkedin" class="icon icon-xs"></i></a>
-                            </li>
-                        </ul>
-                    </div>      
-                </div>
+          </div>
+          <div class="col-sm-auto">
+            <div class="ps-md-5">
+              <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">
+                Empresa
+              </h6>
+              <ul class="list-unstyled">
+                <li class="my-3">
+                  <a href="#" class="text-muted">Nosotros</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-muted">Servicios</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-muted">Certificaciones</a>
+                </li>
+              </ul>
             </div>
+          </div>
+          <div class="col-sm-auto">
+            <div class="ps-md-5">
+              <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">
+                Legal
+              </h6>
+              <ul class="list-unstyled">
+                <li class="my-3">
+                  <a href="#" class="text-muted">Aviso de privacidad</a>
+                </li>
+                <li class="my-3">
+                  <a href="#" class="text-muted">Legalidad</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <hr />
+        <div class="row text-md-start text-center">
+          <div class="col-md-6">
+            <p class="pb-0 mb-0 text-muted">
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              © Cassiopeia Petrolíferos. Todos los derechos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="align-items-end mt-md-0 mt-4">
+              <ul class="list-unstyled mb-0">
+                <li class="d-inline-block me-4">
+                  <a href=""
+                    ><i data-feather="facebook" class="icon icon-xs"></i
+                  ></a>
+                </li>
+                <li class="d-inline-block">
+                  <a href=""
+                    ><i data-feather="linkedin" class="icon icon-xs"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <script>
-        
-
-
-    </script>
+    <script></script>
     <!-- cta + footer end -->
 
     <!-- back to top -->
-    <a class="btn btn-soft-primary shadow-none btn-icon btn-back-to-top" href='#'><i class="icon-xxs" data-feather="arrow-up"></i></a>
+    <a
+      class="btn btn-soft-primary shadow-none btn-icon btn-back-to-top"
+      href="#"
+      ><i class="icon-xxs" data-feather="arrow-up"></i
+    ></a>
 
     <!-- javascript -->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- vendor js -->
-<script src="js/vendor.min.js"></script>
-
+    <script src="js/vendor.min.js"></script>
 
     <!-- theme js -->
-<script src="js/theme.min.js"></script>
-
-
-</body>
-
+    <script src="js/theme.min.js"></script>
+  </body>
 </html>
