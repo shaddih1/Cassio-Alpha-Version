@@ -1,19 +1,18 @@
-@font-face {
-  font-family: vietnam;
-  src: url(vietnam.ttf);
-}
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap); 
 p,
 a,
 h1,
 h2,
 h3,
 td,
+small,
+th,
 label {
-  font-family: vietnam;
+  font-family: Be Vietnam Pro, sans-serif;
 }
 /* ROOT VARIABLES */
 :root {
-  --color-primary: #686ff5;
+  --color-primary: #5c7cfa;
   --color-danger: #ff7782;
   --color-success: #41f1b6;
   --color-gas: red;
@@ -152,6 +151,7 @@ aside .logo {
 aside .logo img {
   width: 200px;
   padding: 12px 12px;
+  background: #f6f6f9;
   border-radius: 17px;
 }
 aside .close {
@@ -540,7 +540,7 @@ main .recent-orders a {
 }
 
 /* SMALL TABLETS AND MOBILE */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .container {
     width: 100%;
     grid-template-columns: 1fr;

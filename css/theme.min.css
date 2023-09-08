@@ -89,6 +89,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden !important;
 }
 hr {
   margin: 1rem 0;
@@ -2051,6 +2052,7 @@ progress {
 .form-label {
   margin-bottom: 0.25rem;
   font-weight: 600;
+  font-size: 1rem;
 }
 .col-form-label {
   padding-top: calc(0.5625rem + 1px);
@@ -4203,6 +4205,20 @@ fieldset:disabled .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+}
+@media screen and (max-width: 600px) {
+  .nav-item {
+    margin-top: 15px;
+  }
+  .margin-down{
+    margin-bottom: 20px;
+  }
+  .optim{
+    width: 95%;
+  }
+  .optim2{
+    width: 100%;
+  }
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -6830,6 +6846,7 @@ fieldset:disabled .btn {
 }
 .position-relative {
   position: relative !important;
+
 }
 .position-absolute {
   position: absolute !important;
@@ -8082,6 +8099,11 @@ fieldset:disabled .btn {
 .text-body {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important;
+  font-size: 1.25rem;
+}
+.text-body-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
   font-size: 1.25rem;
 }
 .text-muted {
@@ -13463,6 +13485,9 @@ fieldset:disabled .btn {
 }
 .animate:hover {
   transform: scale(1.1);
+}
+.bg-gradient-img {
+  background-image: url("../imgs/refineria.png");
 }
 .bg-gradient {
   background: linear-gradient(
