@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- title -->
+        <title>Cassiopeia | Servicios</title>
+        <meta content="Coderthemes" name="author" />
+        <meta content="A fully featured multi purpose template" name="description" />
+    
+        <!-- theme favicon -->
+        <link rel="shortcut icon" href="imgs/favicon.png">
+    
+    
+        <!-- third party plugins -->
+        <link rel="stylesheet" type="text/css" href="css/vendor.min.css">
+    
+        <!-- theme css -->
+        <link rel="stylesheet" type="text/css" href="css/theme.min.css">
+    </html>
+</head>
+
+<body>
+    <div class="bg-gradient3">
+    <header>
+        <nav class="navbar navbar-expand-lg topnav-menu navbar-light zindex-10" >
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <img src=imgs/logo.png height="60" class="d-inline-block align-top" alt="" />
+            </a>
+            <a href="#" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content3"
+              aria-controls="topnav-menu-content3" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </a>
+            <div class="collapse navbar-collapse" id="topnav-menu-content3">
+              
+                <ul class="navbar-nav align-items-lg-center mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#contactanos">Contactanos</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                  <li class="nav-item log_in">
+                    <a class="btn btn-secondary btn-sm" href="#">Inciar Sesión</a>
+                  </li>
+                </ul>
+
+            </div>
+          </div>
+        </nav>
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close-icon">&times;</span>
+              <img src="imgs/logo.png" alt="Centered Image">
+              <form id="loginForm" novalidate method="POST">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email"><br>
+                
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <span id="showPassword" class="eye-icon">👁️</span><br>
+
+                <button type="submit" class="btn btn-primary">Iniciar sesión<a id="dashboardLink" href="dashboard.html" style="display: none;"></a></button>
+
+                <div id="errorLabel" class="errorLabel"></div>
+              </form>
+
+              <form id="registerForm" style="display: none;">
+                <div id="registerSteps">
+                  <div class="step" id="step1">
+                    <h2>Paso 1: Información personal</h2>
+                    <form id="step1Form">
+                      <label for="firstName">First Name:</label>
+                      <input type="text" id="firstName" required><br>
+                      <label for="lastName">Last Name:</label>
+                      <input type="text" id="lastName" required><br>
+                      <button type="button" class="btn btn-secondary" id="step1Continuar">Continuar</button>
+                    </form>
+                  </div>
+                  <div class="step" id="step2">
+                    <h2>Paso2: Subir Credenciales</h2>
+                    <form id="step2Form">
+                      <p>Subir credenciales relevantes para verificación:</p>
+                      <input type="file" id="credentials" accept=".pdf, .docx" required><br>
+                      <button type="button" class="btn btn-secondary" id="step2Continuar">Continuar</button>
+                    </form>
+                  </div>
+                  <div class="step" id="step3">
+                    <h2>Paso 3: Subir Certificados</h2>
+                    <form id="step3Form">
+                      <p>Subir certificados para verificación:</p>
+                      <input type="file" id="credentials" accept=".pdf, .docx" required><br>
+                      <button type="button" class="btn btn-secondary" id="step2Continuar">Continuar</button>
+                    </form>
+                  </div>
+                  <div class="step" id="step4">
+                    <h2>Paso 4: Escribir detalles</h2>
+                    <form id="step4Form">
+                      <p>Observaciones y comentarios :</p>
+                      <textarea id="question" required></textarea><br>
+                      <button type="button" class="btn btn-secondary" id="step4Continuar">Continuar</button>
+                    </form>
+                  </div>
+                  <div class="step" id="step5">
+                    <h2> Paso 5: Revisión final</h2>
+                    <form id="step5Form">
+                      <p>Por favor verifiqué su información antes de enviar:</p>
+                      <button type="submit" class="btn btn-secondary">Enviar</button>
+                    </form>
+                  </div>
+                </div>
+              </form>
+              
+              <form id="resetPasswordForm" style="display: none;">
+                <label for="resetEmail">Correo electrónico:</label>
+                <input type="email" id="resetEmail" name="resetEmail" required><br>
+
+                <button type="submit" class="btn btn-secondary">Enviar verificación</button>
+              </form>
+              <a href="#" id="forgotPassword">¿Olvidaste tu contraseña?</a>
+              <p id="toggleForms">¿Aún no eres miembro? <a href="#">Regístrate</a></p>
+              <span class="back-icon">&larr;</span>
+
+            </div>
+          </div>
+      </header>
+      <section class="hero-4 pb-5 pt-7 py-sm-7">
+            <div class="container">
+                <div class="align-items-center row">
+                    <div class="col-lg-6 col-md-6">
+                        <h1 class="hero-title mt-0">Nuestros <span class="highlight highlight-warning d-inline-block">Servicios</span></h1>
+                        <p class="fs-16 text-body pt-3 w-75">Contamos con múltiples servicios en nuestra empresa, conoce algunos de ellos.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="img-container text-end ps-lg-5 aos-init aos-animate" data-aos="zoom-in">
+                            <div class="align-items-center mt-md-0 mt-4 row">
+                                <div class="col-6">
+                                    <div class="shadow-lg card">
+                                        <div class="p-1 card-body">
+                                            <img src="/static/media/12.d68b84af796b40b90a9a.jpg" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="shadow-lg card">
+                                                <div class="p-1 card-body">
+                                                    <img src="/static/media/14.9154e71e1c33fc9f41a4.jpg" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="shadow-lg card">
+                                                <div class="p-1 mb-0 card-body">
+                                                    <img src="/static/media/15.9c3870a2ec1c10c8059f.jpg" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape bottom">
+                <svg width="1440px" height="40px" viewBox="0 0 1440 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="shape-b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="curve" fill="#fff">
+                            <path d="M0,30.013 C239.659,10.004 479.143,0 718.453,0 C957.763,0 1198.28,10.004 1440,30.013 L1440,40 L0,40 L0,30.013 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </div>
+    <section class="py-3 bg-gradient3 position-relative">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand me-lg-4 mb-4 me-auto" href="#">
+                        <img src=imgs/logo.png height="30" class="d-inline-block align-top" alt="" />
+                    </a>
+                    <h5 class="fw-normal text-muted w-75">Dedicados a la comercialización de petrolíferos a nivel nacional a precios competitivos. Somos una empresa 100% Mexicana.</h5>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="ps-md-5">
+                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Plataforma</h6>
+                        <ul class="list-unstyled">
+                            <li class="my-3"><a href="#" class="text-muted">Dashboard</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="ps-md-5">
+                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Empresa</h6>
+                        <ul class="list-unstyled">
+                            <li class="my-3"><a href="#" class="text-muted">Nosotros</a></li>
+                            <li class="my-3"><a href="#" class="text-muted">Servicios</a></li>
+                            <li class="my-3"><a href="#" class="text-muted">Certificaciones</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="ps-md-5">
+                        <h6 class="mb-4 mt-5 mt-sm-2 fs-14 fw-semibold text-uppercase">Legal</h6>
+                        <ul class="list-unstyled">
+                            <li class="my-3"><a href="#" class="text-muted">Aviso de privacidad</a></li>
+                            <li class="my-3"><a href="#" class="text-muted">Legalidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row text-md-start text-center">
+                <div class="col-md-6">
+                    <p class="pb-0 mb-0 text-muted"><script>document.write(new Date().getFullYear())</script> © Cassiopeia Petrolíferos. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="align-items-end mt-md-0 mt-4">
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-inline-block me-4">
+                                <a href=""><i data-feather="facebook" class="icon icon-xs"></i></a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href=""><i data-feather="linkedin" class="icon icon-xs"></i></a>
+                            </li>
+                        </ul>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
