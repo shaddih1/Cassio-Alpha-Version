@@ -16556,9 +16556,9 @@ p {
       rgba(0, 85, 255, 0.07) 0,
       rgba(0, 85, 255, 0.05) 100%
     )
-    no-repeat left center;
+    left center;
   background-size: calc(1240px + (100vw - 1240px) / 2) 100%;
-  transform: skewY(-6deg);
+  transform: skewY(-3deg);
   transform-origin: top left;
 }
 @media (max-width: 768px) {
