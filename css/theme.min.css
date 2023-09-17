@@ -5038,6 +5038,11 @@ fieldset:disabled .btn {
   position: relative;
   top: -1px;
 }
+@media screen and (max-width: 600px) {
+  .no-alert{
+      display:none;
+  }
+}
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
