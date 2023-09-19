@@ -15109,7 +15109,7 @@ p {
   font-size: 16px !important;
 }
 .fs-17 {
-  font-size: 24px !important;
+  font-size: 17px !important;
 }
 .fs-18 {
   font-size: 18px !important;
@@ -16591,8 +16591,7 @@ p {
   left: 0;
   z-index: -1;
   bottom: 0;
-  background: linear-gradient(white 0, rgba(255, 200, 55, 0.05) 100%) no-repeat
-    left center;
+  background: linear-gradient(white 0, rgba(255, 151, 55, 0.05) 100%) left center;
   background-size: calc(1240px + (100vw - 1240px) / 2) 100%;
   transform: skewY(3deg);
   transform-origin: top left;
@@ -16602,7 +16601,7 @@ p {
 }
 .header-2.primary::before {
   top: -6rem;
-  background: linear-gradient(#f4f5f7 0, #fafafb 100%) no-repeat left center;
+  background: linear-gradient(#f4f5f7 0, #fafafb 100%) left center;
   background-size: calc(1240px + (100vw - 1240px) / 2) 100%;
 }
 @media (max-width: 768px) {
