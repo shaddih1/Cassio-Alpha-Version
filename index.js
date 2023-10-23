@@ -24,10 +24,9 @@ const buildTableBody = () => {
   for (const row of recentOrderData) {
     bodyContent += `
       <tr>
-        <td>${row.productName}</td>
-        <td>${row.productNumber}</td>
-        <td>${row.payment}</td>
-        <td class="primary"><a href="cotizador.html">Cotizar</a></td>
+        <td><p class="fs-16">${row.productName}</p></td>
+        <td><p class="fs-16">${row.payment}</p></td>
+        <td><button type="button" class="me-2 mb-2 mb-xl-0 btn btn-soft-primary"><a href="cotizador.html"></a>Ver precios</button></td>
       </tr>
     `;
   }
